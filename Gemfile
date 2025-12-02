@@ -9,11 +9,11 @@ gem "jekyll", "4.4.1"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jektex", "~> 0.1.1"
-  #gem "jekyll-tidy"
   gem "jekyll-sitemap"
   gem "jekyll-gist"
   gem "jekyll-feed"
   gem "jekyll-paginate"
+  #gem "jekyll-tidy"
 end
 
 # Plugin dependencies

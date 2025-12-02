@@ -20,11 +20,14 @@ GEM
       logger
     faraday-net_http (3.4.2)
       net-http (~> 0.5)
+    ffi (1.17.2)
     ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-aarch64-linux-musl)
     ffi (1.17.2-arm-linux-gnu)
     ffi (1.17.2-arm-linux-musl)
     ffi (1.17.2-arm64-darwin)
+    ffi (1.17.2-x86-linux-gnu)
+    ffi (1.17.2-x86-linux-musl)
     ffi (1.17.2-x86_64-darwin)
     ffi (1.17.2-x86_64-linux-gnu)
     ffi (1.17.2-x86_64-linux-musl)
@@ -41,6 +44,12 @@ GEM
     google-protobuf (4.33.1-arm64-darwin)
       bigdecimal
       rake (>= 13)
+    google-protobuf (4.33.1-x86-linux-gnu)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.33.1-x86-linux-musl)
+      bigdecimal
+      rake (>= 13)
     google-protobuf (4.33.1-x86_64-darwin)
       bigdecimal
       rake (>= 13)
@@ -50,8 +59,6 @@ GEM
     google-protobuf (4.33.1-x86_64-linux-musl)
       bigdecimal
       rake (>= 13)
-    htmlbeautifier (1.4.3)
-    htmlcompressor (0.4.0)
     htmlentities (4.4.2)
     http_parser.rb (0.8.0)
     i18n (1.14.7)
@@ -88,10 +95,6 @@ GEM
       sass-embedded (~> 1.75)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-tidy (0.2.2)
-      htmlbeautifier
-      htmlcompressor
-      jekyll
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     json (2.16.0)
@@ -120,9 +123,16 @@ GEM
     rexml (3.4.4)
     rouge (4.6.1)
     safe_yaml (1.0.5)
+    sass-embedded (1.94.2)
+      google-protobuf (~> 4.31)
+      rake (>= 13)
+    sass-embedded (1.94.2-aarch64-linux-android)
+      google-protobuf (~> 4.31)
     sass-embedded (1.94.2-aarch64-linux-gnu)
       google-protobuf (~> 4.31)
     sass-embedded (1.94.2-aarch64-linux-musl)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.94.2-arm-linux-androideabi)
       google-protobuf (~> 4.31)
     sass-embedded (1.94.2-arm-linux-gnueabihf)
       google-protobuf (~> 4.31)
@@ -130,7 +140,15 @@ GEM
       google-protobuf (~> 4.31)
     sass-embedded (1.94.2-arm64-darwin)
       google-protobuf (~> 4.31)
+    sass-embedded (1.94.2-riscv64-linux-android)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.94.2-riscv64-linux-gnu)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.94.2-riscv64-linux-musl)
+      google-protobuf (~> 4.31)
     sass-embedded (1.94.2-x86_64-darwin)
+      google-protobuf (~> 4.31)
+    sass-embedded (1.94.2-x86_64-linux-android)
       google-protobuf (~> 4.31)
     sass-embedded (1.94.2-x86_64-linux-gnu)
       google-protobuf (~> 4.31)
@@ -146,14 +164,23 @@ GEM
     webrick (1.9.2)
 
 PLATFORMS
+  aarch64-linux-android
   aarch64-linux-gnu
   aarch64-linux-musl
+  arm-linux-androideabi
   arm-linux-gnu
   arm-linux-gnueabihf
   arm-linux-musl
   arm-linux-musleabihf
   arm64-darwin
+  riscv64-linux-android
+  riscv64-linux-gnu
+  riscv64-linux-musl
+  ruby
+  x86-linux-gnu
+  x86-linux-musl
   x86_64-darwin
+  x86_64-linux-android
   x86_64-linux-gnu
   x86_64-linux-musl
 
@@ -164,7 +191,6 @@ DEPENDENCIES
   jekyll-gist
   jekyll-paginate
   jekyll-sitemap
-  jekyll-tidy
 
 RUBY VERSION
    ruby 3.4.7p58
