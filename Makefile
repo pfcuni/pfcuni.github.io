@@ -1,0 +1,19 @@
+SHELL=/usr/bin/env sh
+
+.PHONY: run
+
+run:
+	bundle exec jekyll serve --trace --drafts
+
+clean:
+	bundle exec jekyll clean --trace
+
+install:
+	bundle config set --local path '.vendor/bundle'
+	bundle install
+
+update:
+	bundle update --all
+	bundle update --bundler
+	bundle install
+
